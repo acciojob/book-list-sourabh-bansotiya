@@ -8,6 +8,28 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <h1 style="font-size: 50px; text-align: center;">My<span style="color: blue; ">Book</span>List</h1>
+    <div class="form-group">
+        <form id="book-form" >
+            <input style="display: block; margin-bottom:20px;" type="text" id="title" placeholder="Title">
+            <input style="display: block; margin-bottom:20px;"  type="text" id="author" placeholder="Author">
+            <input style="display: block; margin-bottom:20px;"  type="text" id="isbn" placeholder="ISBN">
+            <button style="background-color: #3380cc; border-radius: 5px;" type="submit" id="submit">Add Book</button>
+        </form>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN#</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="book-list">
+            <!-- Book rows will be dynamically added here -->
+        </tbody>
+    </table>
     <script type="text/javascript" src="./script.js">
 </script>
 
